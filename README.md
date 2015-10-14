@@ -8,8 +8,8 @@ servers to connect to.
   * If types are a concern, supply any integer or a digit-only string.
 
 * Listen on any/all interfaces: `*:` + port number(s).
-  * Specifies that you don't care about interfaces and want to let your OS
-    decide. Usually that results in listening on all available interfaces.
+  * Specifies that you don't care about interfaces. Usually that results
+    in listening on all available interfaces.
   * For multiple port numbers, see below.
 
 * For multiple values, separate them with at least one space.
@@ -34,7 +34,7 @@ servers to connect to.
 
 
 JavaScript Parser
-=================
+-----------------
 An `ipaddrportslist` parser in JavaScript (ECMAScript) is provided in
 `parser.js`. For detailed examples see [the tests](test/parse.node.js).
 [Basic example](example/echosrv.node.js):
@@ -45,7 +45,7 @@ var net = require('net'), ipaddrportslist = require('ipaddrportslist'),
 
 listenAddrs.forEach(function listenOnAddr(lsnAddr) {
   var srv = net.createServer(), descr;
-  // ...
+  /* ... handlers setup ... */
   srv.listen(lsnAddr.port, lsnAddr.host);
 });
 ```
@@ -70,7 +70,7 @@ listenAddrs.forEach(function listenOnAddr(lsnAddr) {
 
 
 License
-=======
+-------
 MIT
 
 
