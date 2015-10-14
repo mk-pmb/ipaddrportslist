@@ -1,0 +1,28 @@
+{
+  "name": "ipaddrportslist",
+  "version": "0.1.0",
+  "description": "Parse a list of hostnames and ports, with some neat extras.",
+  "main": "parser.node.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "nodejs test/parse.node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mk-pmb/ipaddrportslist"
+  },
+  "keywords": [
+    "server",
+    "config",
+    "interface",
+    "port"
+  ],
+  "author": "M.K.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mk-pmb/ipaddrportslist/issues"
+  },
+  "homepage": "https://github.com/mk-pmb/ipaddrportslist"
+}
