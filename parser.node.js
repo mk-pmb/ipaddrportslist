@@ -19,7 +19,9 @@ EX.parse = function (list) {
     addrs = [ { host: EX.defaultHost, port: list } ];
     return EX.copyFirstAddr(addrs);
   }
-  String(list).replace(/\S+/g, function addAddr(word, ports, host) {
+  list = String(list);
+  if (list === '') { throw new EX.EBadAddr('<empty string>'); }
+  list.replace(/\S+/g, function addAddr(word, ports, host) {
     word = String(word).replace(/,+$/, '');
     if (word === '-') { list = ''; }
     if (!list) { return; }

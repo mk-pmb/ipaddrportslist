@@ -36,12 +36,12 @@ servers to connect to.
 JavaScript Parser
 -----------------
 An `ipaddrportslist` parser in JavaScript (ECMAScript) is provided in
-`parser.js`. For detailed examples see [the tests](test/parse.node.js).
+`parser.js`. For detailed examples see the [test specs](test/basics.json).
 [Basic example](example/echosrv.node.js):
 
 ```js
-var net = require('net'), ipaddrportslist = require('ipaddrportslist'),
-  listenAddrs = ipaddrportslist(process.env.HELLOPORT || 2002);
+var net = require('net'), ipAddrPortsList = require('ipaddrportslist'),
+  listenAddrs = ipAddrPortsList(process.env.HELLOPORT || 2002);
 
 listenAddrs.forEach(function listenOnAddr(lsnAddr) {
   var srv = net.createServer(), descr;

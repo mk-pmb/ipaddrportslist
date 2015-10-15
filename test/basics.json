@@ -1,0 +1,25 @@
+﻿[{"q": 23,          "a":["23@localhost"] },
+ {"q":"23",         "a":["23@localhost"] },
+ {"q":"23 23",      "a":["23@localhost", "23@localhost"] },
+ {"q":"80, 443",    "a":["80@localhost", "443@localhost"] },
+ {"q":"80\r443",    "a":["80@localhost", "443@localhost"] },
+ {"q":"80, - 443",  "a":["80@localhost"] },
+ {"q":"euirc:994,6667 freenode:_ hackint:_", "a":[
+    "994@euirc",    "6667@euirc",
+    "994@freenode", "6667@freenode",
+    "994@hackint",  "6667@hackint"
+    ] },
+ {"q":"euirc:994_,6667 freenode:_ hackint:_", "a":[
+   "6667@euirc", "6667@freenode", "6667@hackint" ] },
+ {"q":"hello world",  "e":true },
+ {"q":["hello", "world"], "e":true },
+ {"q":{"hello": "world"}, "e":true },
+ {"q":false,          "e":true },
+ {"q":null,           "e":true },
+ {"q":true,           "e":true },
+ {"q":"",             "e":true },
+ {"q":":",            "e":true },
+ {"q":"_",            "a":[] },
+ {"q":"localhost:_",  "a":[] },
+ {"q":"-", "a":[]}
+]
