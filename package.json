@@ -1,6 +1,6 @@
 {
   "name": "ipaddrportslist",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Parse a list of hostnames and ports, with some neat extras.",
   "main": "parser.node.js",
   "directories": {

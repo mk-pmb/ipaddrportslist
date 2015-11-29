@@ -31,7 +31,7 @@ function testCompare(qa) {
   }
   if (r instanceof Error) {
     if (qa.e === true) { return stats.inc(); }
-    r = '!! ' + String(err.message || err);
+    r = '!! ' + String(r.message || r);
   }
   if ((r && r.join) === tests.join) {
     r = r.map(function (x) { return (x.port + '@' + x.host); });
