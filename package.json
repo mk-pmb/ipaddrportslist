@@ -1,28 +1,34 @@
-{
-  "name": "ipaddrportslist",
-  "version": "0.1.3",
+{ "name": "ipaddrportslist",
+  "version": "0.1.4",
   "description": "Parse a list of hostnames and ports, with some neat extras.",
-  "main": "parser.node.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "nodejs test/parse.node.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mk-pmb/ipaddrportslist"
-  },
   "keywords": [
-    "server",
     "config",
     "interface",
-    "port"
+    "port",
+    "server"
   ],
-  "author": "M.K.",
-  "license": "MIT",
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/ipaddrportslist/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/ipaddrportslist.git"
+  },
   "bugs": {
     "url": "https://github.com/mk-pmb/ipaddrportslist/issues"
   },
-  "homepage": "https://github.com/mk-pmb/ipaddrportslist"
+  "contributors": [],
+
+  "private": false, "license": "MIT",
+
+  "main": "parser.node.js",
+  "scripts": { "test": "nodejs test/parse.node.js" },
+  "directories": { "test": "test" },
+  "eslintConfig": { "extends": "nodejs-pmb" },
+
+  "dependencies": {},
+  "devDependencies": {},
+
+
+  "engines": { "npm": ">=7.0.0", "node": ">=8.0.0" }
 }

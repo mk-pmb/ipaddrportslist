@@ -1,8 +1,16 @@
+
+<!--#echo json="package.json" key="name" underline="=" -->
 ipaddrportslist
 ===============
-Explaining the supported values for that server config option about which
-interfaces and ports to listen on, or that bot config option about which
-servers to connect to.
+<!--/#echo -->
+
+<!--#echo json="package.json" key="description" -->
+Parse a list of hostnames and ports, with some neat extras.
+<!--/#echo -->
+
+A lot of servers need a list of interfaces and ports to listen on,
+and a lot of bots need a list of hosts and ports to connec to.
+A lot of times, those lists have some redundancy. We can do better:
 
 * Listen on a single port on localhost: Just put the number.
   * If types are a concern, supply any integer or a digit-only string.
@@ -37,7 +45,7 @@ JavaScript Parser
 -----------------
 An `ipaddrportslist` parser in JavaScript (ECMAScript) is provided in
 `parser.js`. For detailed examples see the [test specs](test/basics.json).
-[Basic example](example/echosrv.node.js):
+[Basic example](docs/example/echosrv.node.js):
 
 ```js
 var net = require('net'), ipAddrPortsList = require('ipaddrportslist'),
@@ -69,10 +77,15 @@ listenAddrs.forEach(function listenOnAddr(lsnAddr) {
 
 
 
+
+
+<!--#toc stop="scan" -->
+
+&nbsp;
+
+
 License
 -------
+<!--#echo json="package.json" key="license" -->
 MIT
-
-
-
--*- coding: utf-8, tab-width: 2 -*-
+<!--/#echo -->
